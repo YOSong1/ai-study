@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ai-study · Catherine</title>
+  <meta name="description" content="GitHub Pages로 배포된 개인 작업 공간입니다." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Manrope:wght@300;400;500;600&family=Noto+Serif+KR:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F4EFE6;
+      --bg-deep: #ECE5D6;
+      --ink: #1C1A17;
+      --ink-soft: #5C544A;
+      --accent: #8B3A2F;
+      --line: #D6CDB9;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Manrope', 'Noto Serif KR', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 48px 32px;
+      background-image:
+        radial-gradient(circle at 20% 10%, rgba(139, 58, 47, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 80% 90%, rgba(28, 26, 23, 0.05) 0%, transparent 40%);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      font-family: 'Manrope', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .tag::before {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: 'Fraunces', 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .lede {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--ink-soft);
+      max-width: 520px;
+      margin-bottom: 56px;
+    }
+
+    .url-card {
+      background: var(--bg-deep);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .url-card-label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .url-card a {
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      transition: border-color 0.2s ease, color 0.2s ease;
+      word-break: break-all;
+    }
+
+    .url-card a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .meta-item-label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .meta-item-value {
+      font-family: 'Fraunces', 'Noto Serif KR', serif;
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--ink-soft);
+      letter-spacing: 0.1em;
+      padding-top: 48px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 32px 20px; }
+      .url-card { padding: 20px 22px; }
+      .meta { grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="tag">ai-study · 작업 공간</div>
+
+    <h1>안녕하세요,<br/><em>Catherine</em> 입니다.</h1>
+
+    <p class="lede">
+      이 페이지는 GitHub Pages를 통해 배포된 개인 작업 공간입니다.
+      AI와 기술 관련 실험, 학습 결과물을 기록하고 공유하기 위한 공간으로 사용됩니다.
+    </p>
+
+    <section class="url-card">
+      <div class="url-card-label">현재 사이트 주소</div>
+      <a href="https://YOSong1.github.io/ai-study/" target="_blank" rel="noopener">
+        https://YOSong1.github.io/ai-study/
+      </a>
+
+      <div class="meta">
+        <div>
+          <div class="meta-item-label">Hosted on</div>
+          <div class="meta-item-value">GitHub Pages</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Status</div>
+          <div class="meta-item-value">Online · v1.0</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Catherine · Built with care
+  </footer>
+
+</body>
+</html>
