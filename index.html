@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ai-study · Catherine</title>
+  <meta name="description" content="Catherine의 ai-study 작업 공간" />
+
+  <!-- 자동 리다이렉트 (JS 미지원 환경 대비) -->
+  <meta http-equiv="refresh"
+        content="0; url=https://claude.ai/public/artifacts/5d323e1d-fa37-45e0-ab32-e115c9b0e50e" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Noto+Serif+KR:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F4EFE6;
+      --ink: #1C1A17;
+      --ink-soft: #5C544A;
+      --accent: #8B3A2F;
+      --line: #D6CDB9;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      text-align: center;
+      background-image:
+        radial-gradient(circle at 20% 10%, rgba(139, 58, 47, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 80% 90%, rgba(28, 26, 23, 0.05) 0%, transparent 40%);
+    }
+
+    .tag {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .tag::before, .tag::after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: 'Fraunces', 'Noto Serif KR', serif;
+      font-weight: 300;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .lede {
+      font-size: 15px;
+      color: var(--ink-soft);
+      max-width: 420px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--line);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 32px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .manual-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      border-radius: 2px;
+      font-family: 'Fraunces', serif;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      transition: all 0.2s ease;
+    }
+
+    .manual-link:hover {
+      background: var(--ink);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tag">ai-study</div>
+  <div class="spinner"></div>
+
+  <h1>페이지로 <em>이동</em>하는 중입니다</h1>
+  <p class="lede">
+    잠시 후 자동으로 콘텐츠 페이지가 열립니다.<br/>
+    이동이 되지 않으면 아래 버튼을 눌러주세요.
+  </p>
+
+  <a class="manual-link"
+     href="https://claude.ai/public/artifacts/5d323e1d-fa37-45e0-ab32-e115c9b0e50e">
+    바로 이동하기 →
+  </a>
+
+  <script>
+    // JS 리다이렉트 (가장 빠른 경로)
+    window.location.replace("https://claude.ai/public/artifacts/5d323e1d-fa37-45e0-ab32-e115c9b0e50e");
+  </script>
+
+</body>
+</html>
